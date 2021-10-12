@@ -59,8 +59,9 @@ def main():
     for i in range(3):
         for j in range(4):
             axes[i,j].imshow(sims_list[i][j], cmap="gray")
+            axes[i,j].axis('off')
             if i==0:
-                _ = axes[i,j].set_title(title_list[j])
+                _ = axes[i,j].set_title(title_list[j], fontsize=24)
     fig.tight_layout()
     fig.savefig(fig_name)
     print("Done.")
