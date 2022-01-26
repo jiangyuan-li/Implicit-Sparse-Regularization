@@ -8,7 +8,7 @@ class Dataset:
         self.n = n
         self.p = p
         self.k = k
-        self.noise_std = .5
+        self.noise_std = noise_std
         self.beta = beta
 
         self.dataset = LinearRegressionDataset(
